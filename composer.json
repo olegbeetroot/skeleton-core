@@ -1,0 +1,16 @@
+{
+    "name": "skeleton/core",
+    "type": "library",
+    "description": "core for wordpress theme starter skeleton-theme",
+    "keywords": ["wordpress","wp","skeleton"],
+    "homepage": "https://wp-dev.space/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Dou",
+            "email": "john.dou@wp-dev.space",
+            "homepage": "https://wp-dev.space/",
+            "role": "Developer"
+        }
+    ],
+}
