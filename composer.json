@@ -1,5 +1,5 @@
 {
-    "name": "skeleton/core",
+    "name": "skeleton-theme/core",
     "type": "library",
     "description": "core for wordpress theme starter skeleton-theme",
     "keywords": ["wordpress","wp","skeleton"],
