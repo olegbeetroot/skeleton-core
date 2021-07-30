@@ -1,6 +1,6 @@
 <?php
 
-namespace Skeleton;
+namespace SkeletonTheme;
 
 class EnqueueScripts {
 

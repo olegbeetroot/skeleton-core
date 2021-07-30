@@ -1,6 +1,6 @@
 <?php
 
-namespace Skeleton;
+namespace SkeletonTheme;
 
 require('src/BlocksResolver.php');
 require('src/TimberSetup.php');
