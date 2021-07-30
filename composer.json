@@ -14,7 +14,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "wpackagist-plugin/timber-library": "^1.18",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.6"
     },
     "autoload": {
         "psr-0": {
