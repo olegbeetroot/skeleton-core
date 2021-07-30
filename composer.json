@@ -1,8 +1,9 @@
 {
     "name": "skeleton-theme/core",
+    "version": "1.1.0",
     "type": "library",
     "description": "core for wordpress theme starter skeleton-theme",
-    "keywords": ["wordpress","wp","skeleton"],
+    "keywords": ["wordpress","wp","skeleton", "core"],
     "homepage": "https://wp-dev.space/",
     "license": "MIT",
     "authors": [
