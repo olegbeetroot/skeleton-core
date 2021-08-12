@@ -64,6 +64,13 @@ class BlocksResolver
 						if (file_exists($fieldsRegistationFile )) {
 							require($fieldsRegistationFile);
 						}
+
+						// $fieldsRegistationJson = dirname(__FILE__).'/../'. $path . '/' . $slug . '.json';
+						// if (file_exists($fieldsRegistationJson)) {
+						// 	echo 111; die();
+						// 	add_action('acf/settings/load_json', function() use ($fieldsRegistationJson) { return $fieldsRegistationJson; }, 5);
+						// }
+
 						$result = acf_register_block_type($data);
 					}
 				}

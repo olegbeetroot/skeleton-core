@@ -32,6 +32,7 @@ class DashboardCustomizer {
 	 * @param string $hook The current admin page.
 	 */
 	public function admin_assets( $hook ) {
+		wp_enqueue_script('manifest', get_template_directory_uri() . '/public/js/manifest.js', false, null, true);
 		wp_enqueue_style( 'admin-stylesheet', get_template_directory_uri() . '/public/css/wp-dashboard/admin.css', [], '1.0.0', 'all' );
 		wp_enqueue_script( 'admin-javascript', get_template_directory_uri() . '/public/js/wp-dashboard/admin.js', [ 'jquery' ], '1.0.0', true );
 
