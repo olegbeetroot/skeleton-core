@@ -233,14 +233,14 @@ class BlocksResolver
 
 				//TODO: need to provide right order of vendor libraries
 				// Detect extracted libraries for block
-				// if (!empty($file_headers['libs'])) {
-				// 	$vendorScripts = explode(' ', $file_headers['libs']);
-				// 	if (!empty($vendorScripts)) {
-				// 		foreach($vendorScripts as $vendorScript) {
-				// 			wp_enqueue_script('vendor-'.$vendorScript, getVersionedAsset('/js/vendor/'.$vendorScript.'.js'), false, null, false);
-				// 		}
-				// 	}
-				// }
+				if (!empty($file_headers['libs'])) {
+					$vendorScripts = explode(' ', $file_headers['libs']);
+					if (!empty($vendorScripts)) {
+						foreach($vendorScripts as $vendorScript) {
+							wp_enqueue_script('vendor-'.$vendorScript, $this->manifest->getVersionedAsset('/js/vendor/'.$vendorScript.'.js'), false, null, false);
+						}
+					}
+				}
 
 			};
 		}
