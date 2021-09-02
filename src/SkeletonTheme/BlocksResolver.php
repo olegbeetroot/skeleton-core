@@ -60,7 +60,7 @@ class BlocksResolver
 					if ($data !== false && !empty($data['title'])) {
 
 						//register block fields
-						$fieldsRegistationFile = dirname(__FILE__).'/../'. $path . '/' . $slug . '-fields.php';
+						$fieldsRegistationFile = get_template_directory().'/'.$path.$slug.'-fields.php';
 						if (file_exists($fieldsRegistationFile )) {
 							require($fieldsRegistationFile);
 						}
