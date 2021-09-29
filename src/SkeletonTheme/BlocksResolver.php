@@ -58,19 +58,6 @@ class BlocksResolver
 				if ($file_info->isFile() && $file_info->getExtension() == 'php' && !strpos($file,'-fields') && !empty($pathName)) {
 					$data = $this->convertHeadersToParams($pathName, $slug, $path, $file);
 					if ($data !== false && !empty($data['title'])) {
-
-						//register block fields
-						$fieldsRegistationFile = get_template_directory().'/'.$path.$slug.'-fields.php';
-						if (file_exists($fieldsRegistationFile )) {
-							require($fieldsRegistationFile);
-						}
-
-						// $fieldsRegistationJson = dirname(__FILE__).'/../'. $path . '/' . $slug . '.json';
-						// if (file_exists($fieldsRegistationJson)) {
-						// 	echo 111; die();
-						// 	add_action('acf/settings/load_json', function() use ($fieldsRegistationJson) { return $fieldsRegistationJson; }, 5);
-						// }
-
 						$result = acf_register_block_type($data);
 					}
 				}
