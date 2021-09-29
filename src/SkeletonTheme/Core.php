@@ -9,5 +9,6 @@ class Core {
         $fileStructure = new EnqueueScripts();
         $blocksResolver = new BlocksResolver();
         $dashboardCustomizer = new DashboardCustomizer();
+        $acfFieldsResolver = new AcfFieldsResolver();
     }
 }
